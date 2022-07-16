@@ -1,0 +1,10 @@
+# package directories
+rs-shop/node_modules
+jspm_packages
+.webpack
+# Serverless directories
+.serverless
+
+# esbuild directories
+.esbuild
+.idea
