@@ -25,6 +25,8 @@ class Products {
     `);
 
       return products;
+    } catch (e) {
+      throw e;
     } finally {
       await this.close();
     }
@@ -42,6 +44,8 @@ class Products {
     `);
 
       return products?.length ? products[0] : null;
+    } catch (e) {
+      throw e;
     } finally {
       await this.close();
     }

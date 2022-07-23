@@ -1,5 +1,5 @@
 # package directories
-rs-shop/node_modules
+node_modules
 jspm_packages
 .webpack
 # Serverless directories
