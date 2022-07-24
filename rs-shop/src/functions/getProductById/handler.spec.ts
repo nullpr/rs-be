@@ -1,5 +1,15 @@
 import { Context } from "aws-lambda";
 import { main as handler } from "./handler";
+import { productList } from "@mocks/product-list";
+import { productService } from "@services/product/products";
+
+jest.mock("@services/product/products");
+
+jest
+  .mocked(productService.getProductById)
+  .mockImplementation((searchId) =>
+    Promise.resolve(productList.find(({ id }) => searchId === id))
+  );
 
 describe("getProductByIdr", () => {
   const context = {} as Context;

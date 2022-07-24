@@ -1,4 +1,6 @@
-export const productList = [
+import { Product } from "@models/product";
+
+export const productList: Product[] = [
   {
     count: 4,
     description: "Short Product Description1",

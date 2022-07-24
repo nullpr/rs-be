@@ -10,6 +10,12 @@
       ],
       "@mocks/*": [
         "src/__mocks__/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@models/*": [
+        "src/models/*"
       ]
     }
   }
